@@ -1,0 +1,139 @@
+
+/* ตั้งค่าพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Tahoma', sans-serif;
+    background-color: #fff5f8;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* ส่วนหัวเว็บไซต์ */
+header {
+    background: linear-gradient(135deg, #f3a6c5, #d979a2);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* เมนูนำทาง */
+nav {
+    background-color: #bd668d;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffe3ee;
+}
+
+/* เนื้อหา */
+section {
+    max-width: 950px;
+    margin: auto;
+    padding: 45px 20px;
+}
+
+section h2 {
+    color: #bd668d;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 27px;
+}
+
+/* รูปโปรไฟล์ */
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 190px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 6px solid #f5c3d7;
+    box-shadow: 0 5px 15px #e6b3c8;
+}
+
+/* กล่องข้อมูล */
+.card {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #bd668d;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    display: block;
+    margin: 15px auto;
+}
+
+/* ส่วนท้าย */
+footer {
+    background-color: #bd668d;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
+}
+
+/* รองรับโทรศัพท์ */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    section {
+        padding: 25px 15px;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+}
